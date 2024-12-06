@@ -1,0 +1,277 @@
+<!-- Michael Peluso, IS117-001, Spring 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learn More - WebDev Tutorials</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">WebDev Tutorials</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item active" href="html.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="javascript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="bootstrap.html">Bootstrap</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="learn-more.html">Learn More</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="bg-light text-center py-5">
+            <div class="container">
+                <h1>Mastering HTML</h1>
+                <p>Your foundation for building dynamic and engaging websites.</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="container my-5">
+            <div class="row">
+                <!-- What is HTML? -->
+                <div class="col-12 mb-4">
+                    <h2>What is HTML?</h2>
+                    <p>
+                        HTML (HyperText Markup Language) is the standard markup language used to create web pages. It provides the basic structure of a site, which is enhanced and modified by other technologies like CSS (Cascading Style Sheets) and
+                        JavaScript.
+                    </p>
+                </div>
+
+                <!-- Why Learn HTML -->
+                <div class="col-12 mb-4">
+                    <h2>Why Learn HTML?</h2>
+                    <p>Understanding HTML is essential for anyone interested in web development. It allows you to:</p>
+                    <ul>
+                        <li>Create structured content for websites.</li>
+                        <li>Understand the backbone of web pages.</li>
+                        <li>Enhance your ability to learn other web technologies.</li>
+                        <li>Improve your skills for designing and developing interactive websites.</li>
+                    </ul>
+                </div>
+
+                <!-- Basic HTML Structure -->
+                <div class="col-12 mb-4">
+                    <h2>Basic HTML Structure</h2>
+                    <p>A well-structured HTML document is crucial for creating organized and accessible web pages. Below is the basic structure of an HTML document:</p>
+                    <pre>
+<code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+                </pre>
+                </div>
+
+                <!-- Common HTML Tags -->
+                <div class="col-12 mb-4">
+                    <h2>Common HTML Tags</h2>
+                    <p>Here are some of the most commonly used HTML tags:</p>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;h1&gt; to &lt;h6&gt;</td>
+                                <td>Heading tags, where &lt;h1&gt; is the highest level and &lt;h6&gt; the lowest.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;p&gt;</td>
+                                <td>Defines a paragraph.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;a&gt;</td>
+                                <td>Defines a hyperlink.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;img&gt;</td>
+                                <td>Embeds an image.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;div&gt;</td>
+                                <td>Defines a division or a section.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;span&gt;</td>
+                                <td>Defines an inline section.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ul&gt; &lt;ol&gt; &lt;li&gt;</td>
+                                <td>Unordered list, ordered list, and list items.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;table&gt; &lt;tr&gt; &lt;td&gt;</td>
+                                <td>Defines a table, table row, and table data cell.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;form&gt; &lt;input&gt; &lt;button&gt;</td>
+                                <td>Defines a form, input field, and a button.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- HTML5 Semantic Elements -->
+                <div class="col-12 mb-4">
+                    <h2>HTML5 Semantic Elements</h2>
+                    <p>HTML5 introduced semantic elements that provide meaning to the structure of a webpage. These elements improve accessibility and SEO. Some key semantic elements include:</p>
+                    <ul>
+                        <li><strong>&lt;header&gt;</strong>: Defines a header for a document or section.</li>
+                        <li><strong>&lt;nav&gt;</strong>: Defines a container for navigation links.</li>
+                        <li><strong>&lt;main&gt;</strong>: Specifies the main content of a document.</li>
+                        <li><strong>&lt;section&gt;</strong>: Defines a section in a document.</li>
+                        <li><strong>&lt;article&gt;</strong>: Specifies independent, self-contained content.</li>
+                        <li><strong>&lt;aside&gt;</strong>: Defines content aside from the main content.</li>
+                        <li><strong>&lt;footer&gt;</strong>: Defines a footer for a document or section.</li>
+                    </ul>
+                </div>
+
+                <!-- Creating Links and Images -->
+                <div class="col-12 mb-4">
+                    <h2>Creating Links and Images</h2>
+                    <p>Links and images are fundamental components of any webpage. Here's how to use them:</p>
+
+                    <h4>Hyperlinks</h4>
+                    <p>The <code>&lt;a&gt;</code> tag is used to create hyperlinks. The <code>href</code> attribute specifies the destination URL.</p>
+                    <pre>
+<code class="language-html">
+&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+</code>
+                </pre>
+
+                    <h4>Images</h4>
+                    <p>The <code>&lt;img&gt;</code> tag embeds images. The <code>src</code> attribute specifies the image source, and the <code>alt</code> attribute provides alternative text for accessibility.</p>
+                    <pre>
+<code class="language-html">
+&lt;img src="images/sample.jpg" alt="Sample Image"&gt;
+</code>
+                </pre>
+                </div>
+
+                <!-- Forms and Input -->
+                <div class="col-12 mb-4">
+                    <h2>Forms and Input</h2>
+                    <p>Forms are essential for user interaction, allowing users to submit data. Here's a basic example:</p>
+                    <pre>
+<code class="language-html">
+&lt;form action="#" method="post"&gt;
+    &lt;div class="mb-3"&gt;
+        &lt;label for="name" class="form-label"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" class="form-control" id="name" placeholder="Your Name"&gt;
+    &lt;/div&gt;
+    &lt;div class="mb-3"&gt;
+        &lt;label for="email" class="form-label"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" class="form-control" id="email" placeholder="name@example.com"&gt;
+    &lt;/div&gt;
+    &lt;div class="mb-3"&gt;
+        &lt;label for="message" class="form-label"&gt;Message:&lt;/label&gt;
+        &lt;textarea class="form-control" id="message" rows="5" placeholder="Your Message"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-success"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code>
+                </pre>
+                    <p>This form includes fields for name, email, and message, along with a submit button.</p>
+                </div>
+
+                <!-- Best Practices -->
+                <div class="col-12 mb-4">
+                    <h2>HTML Best Practices</h2>
+                    <p>Adhering to best practices ensures your HTML code is clean, maintainable, and accessible:</p>
+                    <ul>
+                        <li><strong>Use Semantic Elements:</strong> Enhance accessibility and SEO by using appropriate semantic tags.</li>
+                        <li><strong>Maintain Proper Indentation:</strong> Makes your code more readable and organized.</li>
+                        <li><strong>Use Alt Attributes for Images:</strong> Improves accessibility for users with visual impairments.</li>
+                        <li><strong>Validate Your Code:</strong> Use tools like the <a href="https://validator.w3.org/" target="_blank">W3C Markup Validation Service</a> to ensure your HTML is error-free.</li>
+                        <li><strong>Keep It Simple:</strong> Avoid unnecessary nesting and keep your code as simple as possible.</li>
+                        <li><strong>Consistent Naming Conventions:</strong> Use clear and consistent naming for classes and IDs.</li>
+                    </ul>
+                </div>
+
+                <!-- Interactive Example -->
+                <div class="col-12 mb-4">
+                    <h2>Interactive HTML Example</h2>
+                    <p>Let's create a simple webpage section using HTML:</p>
+                    <pre>
+<code class="language-html">
+&lt;section&gt;
+    &lt;header&gt;
+        &lt;h2&gt;About Web Development&lt;/h2&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+        &lt;p&gt;Web development involves building and maintaining websites. It encompasses various aspects including web design, web publishing, web programming, and database management.&lt;/p&gt;
+        &lt;img src="images/web-development.jpg" alt="Web Development Illustration" class="img-fluid my-3"&gt;
+    &lt;/article&gt;
+    &lt;footer&gt;
+        &lt;p&gt;© 2024 WebDev Tutorials. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/section&gt;
+</code>
+                </pre>
+                    <p>This example demonstrates the use of semantic elements to create a well-structured section. Below is what is rendered:</p>
+                    <div class="d-flex justify-content-center">
+                        <img src="images/html-example.png" alt="CSS Box Model" class="img-fluid my-3 border" style="max-width: 50%" />
+                    </div>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-12 mb-4">
+                    <h2>Additional Resources</h2>
+                    <p>Enhance your HTML skills with these resources:</p>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+                        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML Tutorial</a></li>
+                        <li><a href="https://html.com/" target="_blank">HTML.com</a></li>
+                        <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Codecademy - Learn HTML</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            <div class="container">
+                <p>&copy Michael Peluso; 2024 WebDev Tutorials | <a href="contact.html" class="text-white">Contact Us</a> | <a href="#" class="text-white">Terms of Use</a></p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    </body>
+</html>

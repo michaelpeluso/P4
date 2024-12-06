@@ -1,0 +1,320 @@
+<!-- Michael Peluso, IS117-001, Spring 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learn More - WebDev Tutorials</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">WebDev Tutorials</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="html.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                                <li><a class="dropdown-item active" href="javascript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="bootstrap.html">Bootstrap</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="learn-more.html">Learn More</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="bg-light text-center py-5">
+            <div class="container">
+                <h1>Mastering JavaScript</h1>
+                <p>Add interactivity and dynamic behavior to your websites.</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="container my-5">
+            <div class="row">
+                <!-- What is JavaScript? -->
+                <div class="col-12 mb-4">
+                    <h2>What is JavaScript?</h2>
+                    <p>JavaScript is a versatile programming language that enables interactive web pages and is an essential part of web applications. Alongside HTML and CSS, JavaScript forms the core technologies of the World Wide Web.</p>
+                </div>
+
+                <!-- Why Learn JavaScript -->
+                <div class="col-12 mb-4">
+                    <h2>Why Learn JavaScript?</h2>
+                    <p>Learning JavaScript is crucial for modern web development because it allows you to:</p>
+                    <ul>
+                        <li>Add interactivity to websites (e.g., forms, sliders, modals).</li>
+                        <li>Create dynamic content that updates in real-time without reloading the page.</li>
+                        <li>Build complex web applications (e.g., single-page applications).</li>
+                        <li>Enhance user experience by making websites more responsive and engaging.</li>
+                        <li>Integrate with various APIs to extend website functionality.</li>
+                    </ul>
+                </div>
+
+                <!-- Basic JavaScript Syntax -->
+                <div class="col-12 mb-4">
+                    <h2>Basic JavaScript Syntax</h2>
+                    <p>JavaScript syntax is the set of rules that define a correctly structured JavaScript program. Here are some fundamental concepts:</p>
+                    <h4>Variables</h4>
+                    <p>Variables store data values. You can declare variables using <code>var</code>, <code>let</code>, or <code>const</code>.</p>
+                    <pre>
+<code class="language-javascript">
+let message = "Hello, World!";
+const PI = 3.14159;
+var count = 10;
+</code>
+                </pre>
+
+                    <h4>Functions</h4>
+                    <p>Functions are reusable blocks of code that perform a specific task.</p>
+                    <pre>
+<code class="language-javascript">
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+const farewell = (name) => {
+    console.log(`Goodbye, ${name}!`);
+};
+</code>
+                </pre>
+
+                    <h4>Control Structures</h4>
+                    <p>Control structures manage the flow of execution in your code.</p>
+                    <pre>
+<code class="language-javascript">
+// If-Else Statement
+if (count > 5) {
+    console.log("Count is greater than 5");
+} else {
+    console.log("Count is 5 or less");
+}
+
+// For Loop
+for (let i = 0; i < 5; i++) {
+    console.log(`Number ${i}`);
+}
+
+// While Loop
+let i = 0;
+while (i < 5) {
+    console.log(`Number ${i}`);
+    i++;
+}
+</code>
+                </pre>
+                </div>
+
+                <!-- JavaScript DOM Manipulation -->
+                <div class="col-12 mb-4">
+                    <h2>JavaScript DOM Manipulation</h2>
+                    <p>The Document Object Model (DOM) allows JavaScript to interact with HTML and CSS, enabling dynamic content updates and user interactions.</p>
+                    <pre>
+<code class="language-javascript">
+// Selecting an element
+const heading = document.querySelector('h1');
+
+// Changing the text content
+heading.textContent = "Welcome to JavaScript Tutorials";
+
+// Adding a new class
+heading.classList.add('highlight');
+
+// Creating a new element
+const newParagraph = document.createElement('p');
+newParagraph.textContent = "This is a new paragraph added dynamically.";
+document.body.appendChild(newParagraph);
+</code>
+                </pre>
+                </div>
+
+                <!-- JavaScript Events -->
+                <div class="col-12 mb-4">
+                    <h2>JavaScript Events</h2>
+                    <p>Events are actions that occur in the browser, such as clicks, form submissions, and page loads. JavaScript can respond to these events to create interactive experiences.</p>
+                    <pre>
+<code class="language-javascript">
+// Adding a click event listener to a button
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    alert('Button was clicked!');
+});
+</code>
+                </pre>
+                </div>
+
+                <!-- JavaScript Arrays and Objects -->
+                <div class="col-12 mb-4">
+                    <h2>JavaScript Arrays and Objects</h2>
+                    <p>Arrays and objects are fundamental data structures in JavaScript used to store collections of data.</p>
+                    <h4>Arrays</h4>
+                    <pre>
+<code class="language-javascript">
+// Creating an array
+const fruits = ['Apple', 'Banana', 'Cherry'];
+
+// Accessing elements
+console.log(fruits[0]); // Apple
+
+// Adding elements
+fruits.push('Date');
+</code>
+                </pre>
+
+                    <h4>Objects</h4>
+                    <pre>
+<code class="language-javascript">
+// Creating an object
+const person = {
+    name: 'John Doe',
+    age: 30,
+    greet: function() {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+};
+
+// Accessing properties
+console.log(person.name); // John Doe
+
+// Calling a method
+person.greet(); // Hello, my name is John Doe
+</code>
+                </pre>
+                </div>
+
+                <!-- Best Practices -->
+                <div class="col-12 mb-4">
+                    <h2>JavaScript Best Practices</h2>
+                    <p>Adhering to best practices ensures your JavaScript code is clean, efficient, and maintainable:</p>
+                    <ul>
+                        <li><strong>Use Strict Mode:</strong> Helps catch common coding mistakes by enforcing stricter parsing and error handling.</li>
+                        <li><strong>Consistent Naming Conventions:</strong> Use clear and consistent naming for variables and functions.</li>
+                        <li><strong>Comment Your Code:</strong> Explain complex logic to make your code more understandable.</li>
+                        <li><strong>Avoid Global Variables:</strong> Minimize the use of global variables to prevent conflicts.</li>
+                        <li><strong>Use Let and Const:</strong> Prefer <code>let</code> and <code>const</code> over <code>var</code> for block scope and immutability.</li>
+                        <li><strong>Modularize Your Code:</strong> Break your code into smaller, reusable functions and modules.</li>
+                        <li><strong>Handle Errors Gracefully:</strong> Use try-catch blocks to manage potential errors.</li>
+                    </ul>
+                </div>
+
+                <!-- Interactive Example -->
+                <div class="col-12 mb-4">
+                    <h2>Interactive JavaScript Example</h2>
+                    <p>Let's create a simple interactive to-do list using JavaScript:</p>
+                    <pre>
+<code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;To-Do List&lt;/title&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;link href="css/styles.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container my-5"&gt;
+        &lt;h2 class="text-center"&gt;To-Do List&lt;/h2&gt;
+        &lt;div class="input-group mb-3"&gt;
+            &lt;input type="text" class="form-control" id="taskInput" placeholder="Add a new task"&gt;
+            &lt;button class="btn btn-success" id="addTaskBtn"&gt;Add Task&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;ul class="list-group" id="taskList"&gt;
+            &lt;!-- Tasks will appear here --&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+                    <p>And the corresponding JavaScript:</p>
+                    <pre>
+<code class="language-javascript">
+// File: js/scripts.js
+
+document.getElementById('addTaskBtn').addEventListener('click', addTask);
+
+function addTask() {
+    const taskInput = document.getElementById('taskInput');
+    const taskText = taskInput.value.trim();
+
+    if (taskText === '') {
+        alert('Please enter a task.');
+        return;
+    }
+
+    const taskList = document.getElementById('taskList');
+    const listItem = document.createElement('li');
+    listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+    listItem.textContent = taskText;
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.className = 'btn btn-danger btn-sm';
+    deleteBtn.textContent = 'Delete';
+    deleteBtn.addEventListener('click', () => {
+        taskList.removeChild(listItem);
+    });
+
+    listItem.appendChild(deleteBtn);
+    taskList.appendChild(listItem);
+
+    taskInput.value = '';
+}
+</code>
+                </pre>
+                    <p>This example demonstrates how to create a dynamic to-do list where users can add and remove tasks. Below is what is rendered before and after adding custom tasks:</p>
+                    <div class="d-flex justify-content-center">
+                        <img src="images/js-example-1.png" alt="CSS Box Model" class="img-fluid my-3 border" style="max-width: 50%" />
+                        <img src="images/js-example-2.png" alt="CSS Box Model" class="img-fluid my-3 border" style="max-width: 50%" />
+                    </div>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-12 mb-4">
+                    <h2>Additional Resources</h2>
+                    <p>Enhance your JavaScript skills with these resources:</p>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs - JavaScript</a></li>
+                        <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools - JavaScript Tutorial</a></li>
+                        <li><a href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
+                        <li><a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codecademy - Learn JavaScript</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            <div class="container">
+                <p>&copy Michael Peluso; 2024 WebDev Tutorials | <a href="contact.html" class="text-white">Contact Us</a> | <a href="#" class="text-white">Terms of Use</a></p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    </body>
+</html>

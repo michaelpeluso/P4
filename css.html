@@ -1,0 +1,354 @@
+<!-- Michael Peluso, IS117-001, Spring 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learn More - WebDev Tutorials</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">WebDev Tutorials</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="html.html">HTML</a></li>
+                                <li><a class="dropdown-item active" href="css.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="javascript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="bootstrap.html">Bootstrap</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="learn-more.html">Learn More</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="bg-light text-center py-5">
+            <div class="container">
+                <h1>Mastering CSS</h1>
+                <p>Transform your web pages with stunning styles and responsive layouts.</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="container my-5">
+            <div class="row">
+                <!-- What is CSS? -->
+                <div class="col-12 mb-4">
+                    <h2>What is CSS?</h2>
+                    <p>
+                        CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS controls the layout of multiple web pages all at once, allowing you to apply styles consistently
+                        across your entire website.
+                    </p>
+                </div>
+
+                <!-- Why Learn CSS -->
+                <div class="col-12 mb-4">
+                    <h2>Why Learn CSS?</h2>
+                    <p>Learning CSS is essential for creating visually appealing and user-friendly websites. It enables you to:</p>
+                    <ul>
+                        <li>Enhance the appearance of web pages.</li>
+                        <li>Create responsive and mobile-friendly designs.</li>
+                        <li>Improve user experience through intuitive layouts.</li>
+                        <li>Increase website accessibility and usability.</li>
+                        <li>Ensure consistency across different web pages.</li>
+                    </ul>
+                </div>
+
+                <!-- Basic CSS Syntax -->
+                <div class="col-12 mb-4">
+                    <h2>Basic CSS Syntax</h2>
+                    <p>CSS is composed of selectors and declarations. The selector points to the HTML element you want to style, and the declaration block contains one or more declarations separated by semicolons.</p>
+                    <pre>
+<code class="language-css">
+selector {
+    property: value;
+}
+</code>
+                </pre>
+                    <p><strong>Example:</strong> Changing the text color of all <code>p</code> elements to blue.</p>
+                    <pre>
+<code class="language-css">
+p {
+    color: blue;
+}
+</code>
+                </pre>
+                </div>
+
+                <!-- CSS Selectors -->
+                <div class="col-12 mb-4">
+                    <h2>CSS Selectors</h2>
+                    <p>Selectors are patterns used to select the elements you want to style. Here are some common types:</p>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Selector</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Element Selector</td>
+                                <td>Selects all elements of a specific type.</td>
+                                <td><code>p { ... }</code></td>
+                            </tr>
+                            <tr>
+                                <td>Class Selector</td>
+                                <td>Selects all elements with a specific class.</td>
+                                <td><code>.intro { ... }</code></td>
+                            </tr>
+                            <tr>
+                                <td>ID Selector</td>
+                                <td>Selects a single element with a specific ID.</td>
+                                <td><code>#header { ... }</code></td>
+                            </tr>
+                            <tr>
+                                <td>Attribute Selector</td>
+                                <td>Selects elements with a specific attribute.</td>
+                                <td><code>input[type="text"] { ... }</code></td>
+                            </tr>
+                            <tr>
+                                <td>Pseudo-class Selector</td>
+                                <td>Selects elements in a specific state.</td>
+                                <td><code>a:hover { ... }</code></td>
+                            </tr>
+                            <tr>
+                                <td>Universal Selector</td>
+                                <td>Selects all elements in the document.</td>
+                                <td><code>* { ... }</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- CSS Properties -->
+                <div class="col-12 mb-4">
+                    <h2>Common CSS Properties</h2>
+                    <p>CSS offers a wide range of properties to style your web pages. Here are some of the most commonly used properties:</p>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>color</td>
+                                <td>Sets the color of the text.</td>
+                                <td><code>color: #333;</code></td>
+                            </tr>
+                            <tr>
+                                <td>background-color</td>
+                                <td>Sets the background color of an element.</td>
+                                <td><code>background-color: #f0f0f0;</code></td>
+                            </tr>
+                            <tr>
+                                <td>font-size</td>
+                                <td>Sets the size of the font.</td>
+                                <td><code>font-size: 16px;</code></td>
+                            </tr>
+                            <tr>
+                                <td>margin</td>
+                                <td>Sets the outer spacing of an element.</td>
+                                <td><code>margin: 20px;</code></td>
+                            </tr>
+                            <tr>
+                                <td>padding</td>
+                                <td>Sets the inner spacing of an element.</td>
+                                <td><code>padding: 10px;</code></td>
+                            </tr>
+                            <tr>
+                                <td>border</td>
+                                <td>Sets the border of an element.</td>
+                                <td><code>border: 1px solid #ccc;</code></td>
+                            </tr>
+                            <tr>
+                                <td>display</td>
+                                <td>Specifies the display behavior of an element.</td>
+                                <td><code>display: flex;</code></td>
+                            </tr>
+                            <tr>
+                                <td>flex</td>
+                                <td>Defines how a flex item will grow or shrink.</td>
+                                <td><code>flex: 1;</code></td>
+                            </tr>
+                            <tr>
+                                <td>position</td>
+                                <td>Specifies the type of positioning method.</td>
+                                <td><code>position: relative;</code></td>
+                            </tr>
+                            <tr>
+                                <td>z-index</td>
+                                <td>Sets the stack order of positioned elements.</td>
+                                <td><code>z-index: 10;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- CSS Box Model -->
+                <div class="col-12 mb-4">
+                    <h2>CSS Box Model</h2>
+                    <p>The CSS Box Model is a fundamental concept in web design, describing the rectangular boxes generated for elements in the document tree and how they interact with each other. It consists of:</p>
+                    <ul>
+                        <li><strong>Content:</strong> The actual content of the box, such as text or images.</li>
+                        <li><strong>Padding:</strong> Clears an area around the content. The padding is transparent.</li>
+                        <li><strong>Border:</strong> A border that surrounds the padding and content.</li>
+                        <li><strong>Margin:</strong> Clears an area outside the border. The margin is transparent.</li>
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                        <img src="images/css-box-model.png" alt="CSS Box Model" class="img-fluid my-3" style="max-width: 75%" />
+                    </div>
+                </div>
+
+                <!-- CSS Flexbox -->
+                <div class="col-12 mb-4">
+                    <h2>CSS Flexbox</h2>
+                    <p>Flexbox is a layout model that allows responsive elements within a container to be automatically arranged depending on screen size. It simplifies the process of aligning and distributing space among items in a container.</p>
+                    <pre>
+<code class="language-css">
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</code>
+                </pre>
+                </div>
+
+                <!-- CSS Grid -->
+                <div class="col-12 mb-4">
+                    <h2>CSS Grid</h2>
+                    <p>CSS Grid Layout is a two-dimensional grid-based layout system that aims to do nothing less than completely change the way we design grid-based user interfaces.</p>
+                    <pre>
+<code class="language-css">
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+</code>
+                </pre>
+                </div>
+
+                <!-- Responsive Design -->
+                <div class="col-12 mb-4">
+                    <h2>Responsive Design</h2>
+                    <p>Responsive design ensures that your website looks good on all devices, from desktops to mobile phones. CSS media queries are used to apply different styles for different screen sizes.</p>
+                    <pre>
+<code class="language-css">
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+</code>
+                </pre>
+                </div>
+
+                <!-- Interactive Example -->
+                <div class="col-12 mb-4">
+                    <h2>Interactive CSS Example</h2>
+                    <p>Let's create a simple navigation bar using CSS Flexbox:</p>
+                    <pre>
+<code class="language-html">
+&lt;nav class="navbar"&gt;
+    &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;ul class="nav-links"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</code>
+                </pre>
+                    <p>And the corresponding CSS:</p>
+                    <pre>
+<code class="language-css">
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .nav-links li a:hover {
+    color: #ffdd57;
+}
+</code>
+                </pre>
+                    <p>This example demonstrates how to create a responsive navigation bar using Flexbox. Below is what is rendered:</p>
+                    <div class="d-flex justify-content-center">
+                        <img src="images/css-example.png" alt="CSS Box Model" class="img-fluid my-3 border" style="max-width: 50%" />
+                    </div>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-12 mb-4">
+                    <h2>Additional Resources</h2>
+                    <p>Enhance your CSS skills with these resources:</p>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs - CSS</a></li>
+                        <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools - CSS Tutorial</a></li>
+                        <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                        <li><a href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy - Learn CSS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            <div class="container">
+                <p>&copy Michael Peluso; 2024 WebDev Tutorials | <a href="contact.html" class="text-white">Contact Us</a> | <a href="#" class="text-white">Terms of Use</a></p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    </body>
+</html>

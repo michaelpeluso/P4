@@ -1,0 +1,214 @@
+<!-- Michael Peluso, IS117-001, Spring 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learn More - WebDev Tutorials</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">WebDev Tutorials</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="html.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="css.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="javascript.html">JavaScript</a></li>
+                                <li><a class="dropdown-item active" href="bootstrap.html">Bootstrap</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="learn-more.html">Learn More</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="bg-light text-center py-5">
+            <div class="container">
+                <h1>Mastering Bootstrap</h1>
+                <p>Build responsive and modern websites with ease using Bootstrap.</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="container my-5">
+            <div class="row">
+                <!-- What is Bootstrap? -->
+                <div class="col-12 mb-4">
+                    <h2>What is Bootstrap?</h2>
+                    <p>
+                        Bootstrap is a powerful front-end framework for faster and easier web development. It includes HTML, CSS, and JavaScript components for common interface elements, enabling developers to build responsive and mobile-first
+                        websites efficiently.
+                    </p>
+                </div>
+
+                <!-- Why Learn Bootstrap -->
+                <div class="col-12 mb-4">
+                    <h2>Why Learn Bootstrap?</h2>
+                    <p>Learning Bootstrap offers numerous advantages in web development:</p>
+                    <ul>
+                        <li><strong>Responsive Design:</strong> Ensures your website looks great on all devices, from desktops to smartphones.</li>
+                        <li><strong>Pre-designed Components:</strong> Access a wide range of ready-to-use components like buttons, forms, navbars, modals, and more.</li>
+                        <li><strong>Consistency:</strong> Maintains a consistent look and feel across your website, improving user experience.</li>
+                        <li><strong>Customization:</strong> Easily customize components to match your design preferences using Bootstrap's utility classes and Sass variables.</li>
+                        <li><strong>Community Support:</strong> Benefit from extensive documentation, tutorials, and a large community of developers.</li>
+                    </ul>
+                </div>
+
+                <!-- Basic Bootstrap Structure -->
+                <div class="col-12 mb-4">
+                    <h2>Basic Bootstrap Structure</h2>
+                    <p>Bootstrap is built with a combination of HTML, CSS, and JavaScript. Here's a basic structure to get started:</p>
+                    <pre>
+<code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+<head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Bootstrap Example&lt;/title&gt;
+    <!-- Bootstrap CSS -->
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+</code>
+                </pre>
+                    <p>This basic structure includes the Bootstrap CSS file, which is essential for using Bootstrap's components.</p>
+                </div>
+
+                <!-- Bootstrap Grid System -->
+                <div class="col-12 mb-4">
+                    <h2>Bootstrap Grid System</h2>
+                    <p>The Bootstrap grid system allows you to create responsive layouts with ease. It uses a series of containers, rows, and columns to layout and align content.</p>
+                    <pre>
+<code class="language-html">
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4"&gt;Column 1&lt;/div&gt;
+        &lt;div class="col-md-4"&gt;Column 2&lt;/div&gt;
+        &lt;div class="col-md-4"&gt;Column 3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+                </pre>
+                    <p>This example creates three equal-width columns on medium to large screens. On smaller screens, columns stack vertically.</p>
+                </div>
+
+                <!-- Bootstrap Components -->
+                <div class="col-12 mb-4">
+                    <h2>Bootstrap Components</h2>
+                    <p>Bootstrap offers a variety of pre-designed components that can be easily integrated into your projects:</p>
+                    <ul>
+                        <li><strong>Buttons:</strong> Stylish and responsive buttons.</li>
+                        <li><strong>Forms:</strong> Enhanced form elements with validation.</li>
+                        <li><strong>Navbars:</strong> Responsive navigation bars.</li>
+                        <li><strong>Modals:</strong> Popup dialogs for user interactions.</li>
+                        <li><strong>Cards:</strong> Flexible content containers.</li>
+                        <li><strong>Alerts:</strong> Feedback messages for user actions.</li>
+                    </ul>
+                </div>
+
+                <!-- Bootstrap Utilities -->
+                <div class="col-12 mb-4">
+                    <h2>Bootstrap Utilities</h2>
+                    <p>Bootstrap provides utility classes for common CSS tasks, making it easy to style elements without writing custom CSS:</p>
+                    <ul>
+                        <li><strong>Spacing:</strong> Margin and padding utilities.</li>
+                        <li><strong>Typography:</strong> Text alignment and formatting.</li>
+                        <li><strong>Colors:</strong> Background and text color utilities.</li>
+                        <li><strong>Display:</strong> Visibility and display properties.</li>
+                        <li><strong>Flexbox:</strong> Flexbox utilities for layout management.</li>
+                    </ul>
+                </div>
+
+                <!-- Responsive Design -->
+                <div class="col-12 mb-4">
+                    <h2>Responsive Design</h2>
+                    <p>Bootstrap's responsive utilities make it easy to create layouts that adapt to different screen sizes. Use predefined classes to control the visibility and behavior of elements on various devices.</p>
+                    <pre>
+<code class="language-html">
+&lt;div class="d-none d-md-block"&gt;
+    This content is hidden on small screens and visible on medium and larger screens.
+&lt;/div&gt;
+</code>
+                </pre>
+                </div>
+
+                <!-- Interactive Example -->
+                <div class="col-12 mb-4">
+                    <h2>Interactive Bootstrap Example</h2>
+                    <p>Let's create a simple responsive navigation bar using Bootstrap:</p>
+                    <pre>
+                        <pre>
+<code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="px-4 py-5 my-5 text-center"&gt;
+        &lt;h1 class="display-5 fw-bold"&gt;Centered hero&lt;/h1&gt;
+        &lt;div class="col-lg-6 mx-auto"&gt;
+            &lt;p class="lead mb-4"&gt;Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.&lt;/p&gt;
+            &lt;div class="d-grid gap-2 d-sm-flex justify-content-sm-center"&gt;
+                &lt;button type="button" class="btn btn-primary btn-lg px-4 gap-3"&gt;Primary button&lt;/button&gt;
+                &lt;button type="button" class="btn btn-outline-secondary btn-lg px-4"&gt;Secondary&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+                </pre>
+                    <p>This example demonstrates how to create a responsive hero section for the top of a webpage. Below is what is rendered:</p>
+                    <div class="d-flex justify-content-center">
+                        <img src="images/bootstrap-example.png" alt="CSS Box Model" class="img-fluid my-3 border" style="max-width: 50%" />
+                    </div>
+                    <p class="text-muted small">Access <a href="https://getbootstrap.com/docs/5.0/examples/heroes/" target="_blank">this</a> Bootstrap example.</p>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-12 mb-4">
+                    <h2>Additional Resources</h2>
+                    <p>Enhance your Bootstrap skills with these resources:</p>
+                    <ul>
+                        <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Bootstrap Documentation</a></li>
+                        <li><a href="https://www.w3schools.com/bootstrap5/" target="_blank">W3Schools - Bootstrap 5 Tutorial</a></li>
+                        <li><a href="https://css-tricks.com/snippets/bootstrap/" target="_blank">CSS-Tricks - Bootstrap Snippets</a></li>
+                        <li><a href="https://www.codecademy.com/learn/learn-bootstrap" target="_blank">Codecademy - Learn Bootstrap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            <div class="container">
+                <p>&copy Michael Peluso; 2024 WebDev Tutorials | <a href="contact.html" class="text-white">Contact Us</a> | <a href="#" class="text-white">Terms of Use</a></p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    </body>
+</html>
